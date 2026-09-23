@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerador de Orçamento</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div>
+                <span class="label">FERRAMENTA</span>
+                <h1>Gerador de Orçamento</h1>
+                <p>Cole os produtos copiados do sistema Trieer.</p>
+            </div>
+        </header>
+
+        <section class="input-section">
+
+            <label for="produto-input">COLAR PRODUTO</label>
+
+            <textarea
+                id="produto-input"
+                placeholder="Cole aqui o produto copiado do Trieer..."
+                autofocus
+            ></textarea>
+
+            <div class="actions">
+                <button id="adicionar-btn" class="btn btn-primary">
+                    Adicionar ao carrinho
+                </button>
+
+                <button id="limpar-input-btn" class="btn btn-secondary">
+                    Limpar
+                </button>
+            </div>
+
+            <p id="mensagem" class="mensagem"></p>
+
+        </section>
+
+
+        <section class="carrinho-section">
+
+            <div class="section-header">
+                <div>
+                    <span class="label">ORÇAMENTO</span>
+                    <h2>Carrinho</h2>
+                </div>
+
+                <span id="quantidade-itens" class="contador">
+                    0 itens
+                </span>
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Código</th>
+                            <th>Produto</th>
+                            <th>Und.</th>
+                            <th>Preço</th>
+                            <th>Desc.</th>
+                            <th>Final</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="carrinho">
+                    </tbody>
+
+                </table>
+
+                <div id="carrinho-vazio" class="carrinho-vazio">
+                    Nenhum produto adicionado.
+                </div>
+
+            </div>
+
+
+            <div class="resumo">
+
+                <div>
+                    <span class="label">TOTAL</span>
+                    <strong id="total">R$ 0,00</strong>
+                </div>
+
+                <div class="resumo-actions">
+
+                    <button id="limpar-carrinho-btn" class="btn btn-secondary">
+                        Limpar carrinho
+                    </button>
+
+                    <button id="gerar-btn" class="btn btn-primary">
+                        Gerar orçamento
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
+
