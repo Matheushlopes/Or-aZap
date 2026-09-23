@@ -375,3 +375,38 @@ td:nth-child(2) {
     }
 
 }
+
+.tool-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 350px;
+
+    padding: 16px 18px;
+
+    border: 1px solid #d8d8d4;
+    border-radius: 6px;
+
+    background: #fff;
+    color: #171717;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition:
+        border-color 0.2s,
+        background 0.2s;
+}
+
+.tool-link:hover {
+    border-color: #171717;
+    background: #f7f7f5;
+}
+
+.tool-link span {
+    font-size: 20px;
+}
